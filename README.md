@@ -37,8 +37,8 @@ Anaconda environment recommended here!
 1. Clone this repository 
 
    ```bash
-   git clone
-   cd 
+   git clone https://github.com/irasin/Pytorch_Adain_from_scratch
+   cd Pytorch_Adain_from_scratch
    ```
 
 2. Prepare your content image and style image. I provide some in the `content` and `style` and you can try to use them easily.
