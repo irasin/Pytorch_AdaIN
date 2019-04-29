@@ -96,10 +96,14 @@ Anaconda environment recommended here!
 
 ## Result
 
-Some results of my cat (called Sora) will be shown here.
+Some results of content image and my cat (called Sora) will be shown here.
 
-![image](https://github.com/irasin/Pytorch_Adain_from_scratch/resout_gif/res1.gif)
-
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res1.gif)
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res2.gif)
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res3.gif)
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res4.gif)
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res5.gif)
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/blob/master/resout_gif/res6.gif)
 
 
 
