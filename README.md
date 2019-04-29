@@ -49,7 +49,7 @@ Anaconda environment recommended here!
    python test -c content_image_path -s style_image_path
    ```
 
-   ```py
+   ```
    usage: test.py [-h] 
                   [--content CONTENT] 
                   [--style STYLE]
@@ -77,7 +77,7 @@ Anaconda environment recommended here!
    python train.py
    ```
 
-   ```py
+   ```
    usage: train.py [-h] 
                    [--batch_size BATCH_SIZE] 
                    [--epoch EPOCH]
