@@ -67,7 +67,7 @@ Anaconda environment recommended here!
 
 ## train
 
-1. Download [COCO]([http://cocodataset.org/#download](http://cocodataset.org/#download)) (as content dataset)and [[Wikiart](https://www.kaggle.com/c/painter-by-numbers)] (as style dataset) and unzip them, rename them as `content` and `style`  respectively (recommended).
+1. Download [COCO](http://cocodataset.org/#download) (as content dataset)and [Wikiart](https://www.kaggle.com/c/painter-by-numbers) (as style dataset) and unzip them, rename them as `content` and `style`  respectively (recommended).
 
 2. Modify the argument in the` train.py` such as the path of directory, epoch, learning_rate or you can add your own training code.
 
