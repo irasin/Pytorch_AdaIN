@@ -43,7 +43,8 @@ Anaconda environment recommended here!
 
 2. Prepare your content image and style image. I provide some in the `content` and `style` and you can try to use them easily.
 
-3. Generate the output image. A transferred output image and a content_output_pair image and a NST_demo_like image will be generated.
+3. Download the pretrained model [here](https://drive.google.com/file/d/1zpcGq61J9VHyooJ0BToEyeQRDFcVRrHZ/view?usp=sharing)
+4. Generate the output image. A transferred output image and a content_output_pair image and a NST_demo_like image will be generated.
 
    ```python
    python test -c content_image_path -s style_image_path
