@@ -98,7 +98,7 @@ Anaconda environment recommended here!
 
 Some results of my cat (called Sora) will be shown here.
 
-![image]()
+![image](https://github.com/irasin/Pytorch_Adain_from_scratch/resout_gif/res1.gif)
 
 
 
