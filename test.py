@@ -57,24 +57,29 @@ def main():
     s_tensor = trans(s).unsqueeze(0).to(device)
     with torch.no_grad():
         out = model.generate(c_tensor, s_tensor, args.alpha)
-    c_denorm = denorm(c_tensor, device)
-    out_denorm = denorm(out, device)
-    res = torch.cat([c_denorm, out_denorm], dim=0)
-    res = res.to('cpu')
+    
+    out = denorm(out, device)
 
     if args.output_name is None:
         c_name = os.path.splitext(os.path.basename(args.content))[0]
         s_name = os.path.splitext(os.path.basename(args.style))[0]
         args.output_name = f'{c_name}_{s_name}'
 
-    save_image(out_denorm, f'{args.output_name}.jpg', nrow=1)
-    save_image(res, f'{args.output_name}_pair.jpg', nrow=2)
+    save_image(out, f'{args.output_name}.jpg', nrow=1)
+    o = Image.open(f'{args.output_name}.jpg')
 
-    o = Image.open(f'{args.output_name}_pair.jpg')
+    demo = Image.new('RGB', (c.width * 2, c.height))
+    o = o.resize(c.size)
     s = s.resize((i // 4 for i in c.size))
-    box = (o.width // 2, o.height - s.height)
-    o.paste(s, box)
-    o.save(f'{args.output_name}_style_transfer_demo.jpg', quality=95)
+
+    demo.paste(c, (0, 0))
+    demo.paste(o, (c.width, 0))
+    demo.paste(s, (c.width, c.height - s.height))
+    demo.save(f'{args.output_name}_style_transfer_demo.jpg', quality=95)
+
+    o.paste(s,  (0, o.height - s.height))
+    o.save(f'{args.output_name}_with_style_image.jpg', quality=95)
+
     print(f'result saved into files starting with {args.output_name}')
 
 
