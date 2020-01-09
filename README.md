@@ -9,6 +9,9 @@ I give a brief qiita blog and you can check it from [here](https://qiita.com/eda
 
 If you have any question, please feel free to contact me. (Language in English/Japanese/Chinese will be ok!)
 
+## Notice
+I propose a structure-emphasized multimodal style transfer(SEMST), feel free to use it [here](https://github.com/irasin/Structure-emphasized-Multimodal-Style-Transfer).
+
 ------
 
 ## Requirements
