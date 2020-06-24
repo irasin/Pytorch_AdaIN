@@ -29,7 +29,7 @@ def main():
                         help='Style image path e.g. image.jpg')
     parser.add_argument('--output_name', '-o', type=str, default=None,
                         help='Output path for generated image, no need to add ext, e.g. out')
-    parser.add_argument('--alpha', '-a', type=int, default=1,
+    parser.add_argument('--alpha', '-a', type=float, default=1,
                         help='alpha control the fusion degree in Adain')
     parser.add_argument('--gpu', '-g', type=int, default=0,
                         help='GPU ID(nagative value indicate CPU)')
